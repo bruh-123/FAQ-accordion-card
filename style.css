@@ -1,0 +1,135 @@
+:root {
+	/* Text */
+	--DarkBlue: hsl(238, 29%, 16%);
+	--SoftRed: hsl(14, 88%, 65%);
+
+	/* Gradient */
+	--SoftViolet: hsl(273, 75%, 66%);
+	--SoftBlue: hsl(240, 73%, 65%);
+
+	/* Text */
+	--VeryDarkGrayBlue: hsl(237, 12%, 33%);
+	--DarkGrayBlue: hsl(240, 6%, 50%);
+
+	/* Dividers */
+	--LightGrayBlue: hsl(240, 5%, 91%);
+
+	font-size: 12px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+body {
+	font-family: "Kumbh Sans", sans-serif;
+	font-weight: 400;
+	min-height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(var(--SoftViolet), var(--SoftBlue));
+	border: solid 1px;
+	/* width: 375px; */
+	padding: 150px 0 85px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	width: 328px;
+	background-color: white;
+	margin-bottom: 1rem;
+	padding: 0 25px 49px;
+	box-shadow: 0px 14px 21px 0px rgba(0,0,0,0.38);
+}
+
+.img-stack {
+	border: solid 1px;
+	background-image: url("./images/bg-pattern-mobile.svg");
+	background-repeat: no-repeat;
+	background-position: top 0px left 50%;
+	margin-bottom: 2rem;
+	padding-bottom: 15px;
+}
+
+.image {
+	margin-top: -108px;
+	padding-right: 30px;
+}
+
+.title {
+	color: var(--DarkBlue);
+	font-weight: 700;
+	font-size: 2.65rem;
+	margin-bottom: 1.1rem;
+	border: solid 1px;
+}
+
+section{
+	min-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	border-bottom: solid 1px var(--LightGrayBlue);
+	padding: 1.4rem 0 ;
+}
+
+.ask {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--DarkBlue);
+	font-size: 13px;
+	/* margin-bottom: 1.1rem; */
+	cursor: pointer;
+	/* background-color: #c2c2c2; */
+}
+
+.ask p:hover {
+	color: var(--SoftRed);
+}
+
+.question{
+	font-weight: 400;
+}
+
+.icon-arrow{
+	a
+}
+
+.reply {
+	/* background-color: #a2a2a2; */
+	display: none;
+	color: var(--DarkGrayBlue);
+	margin-top: 1.3rem;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: var(--SoftRed);
+}
