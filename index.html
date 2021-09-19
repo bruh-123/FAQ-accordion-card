@@ -10,8 +10,14 @@
 			href="./images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="style.css" />
-		<link
+		<!-- <link
 			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;800&display=swap"
 			rel="stylesheet"
 		/>
 		<title>Frontend Mentor | FAQ Accordion Card</title>
@@ -21,96 +27,113 @@
 		<main class="card">
 			<div class="img-stack">
 				<img
+					src="./images/illustration-box-desktop.svg"
+					alt=""
+					role="presentation"
+					class="box"
+				/>
+				<img
 					class="image"
 					role="presentation"
 					src="./images/illustration-woman-online-mobile.svg"
 					alt=""
 				/>
 			</div>
-			<div class="title">FAQ</div>
 			<section class="faq">
-
-			<ul>
-				<li>
-					<div class="ask" onclick="toggleExpand('quest1','img1','rep1')">
-						<p id="quest1" class="question">How many team members can I invite?</p>
-						<img id="img1"
-							class="icon-arrow"
-							src="./images/icon-arrow-down.svg"
-							role="presentation"
-							alt="icon-arrow"
-						/>
-					</div>
-					<p id="rep1" class="reply">
+				<div class="title">FAQ</div>
+				<ul>
+					<li>
+						<div class="ask" onclick="toggleExpand('quest1','img1','rep1')">
+							<p id="quest1" class="question">
+								How many team members can I invite?
+							</p>
+							<img
+								id="img1"
+								class="icon-arrow"
+								src="./images/icon-arrow-down.svg"
+								role="presentation"
+								alt="icon-arrow"
+							/>
+						</div>
+						<p id="rep1" class="reply">
 							You can invite up to 2 additional users on the Free plan. There is
 							no limit on team members for the Premium plan.
-					</p>
-				</li>
+						</p>
+					</li>
 
-				<li>
-					<div class="ask" onclick="toggleExpand('quest2','img2','rep2')">
-						<p id="quest2" class="question">What is the maximum file upload size?</p>
-						<img id="img2"
-							class="icon-arrow"
-							src="./images/icon-arrow-down.svg"
-							role="presentation"
-							alt="icon-arrow"
-						/>
-					</div>
-					<p id="rep2" class="reply">
-						No more than 2GB. All files in your account must fit your allotted
-						storage space.
-					</p>
-				</li>
+					<li>
+						<div class="ask" onclick="toggleExpand('quest2','img2','rep2')">
+							<p id="quest2" class="question">
+								What is the maximum file upload size?
+							</p>
+							<img
+								id="img2"
+								class="icon-arrow"
+								src="./images/icon-arrow-down.svg"
+								role="presentation"
+								alt="icon-arrow"
+							/>
+						</div>
+						<p id="rep2" class="reply">
+							No more than 2GB. All files in your account must fit your allotted
+							storage space.
+						</p>
+					</li>
 
-				<li>
-					<div class="ask" onclick="toggleExpand('quest3','img3','rep3')">
-						<p id="quest3" class="question">How do I reset my password?</p>
-						<img id="img3"
-							class="icon-arrow"
-							src="./images/icon-arrow-down.svg"
-							role="presentation"
-							alt="icon-arrow"
-						/>
-					</div>
-					<p id="rep3" class="reply">
-						Click “Forgot password” from the login page or “Change password”
-						from your profile page. A reset link will be emailed to you.
-					</p>
-				</li>
+					<li>
+						<div class="ask" onclick="toggleExpand('quest3','img3','rep3')">
+							<p id="quest3" class="question">How do I reset my password?</p>
+							<img
+								id="img3"
+								class="icon-arrow"
+								src="./images/icon-arrow-down.svg"
+								role="presentation"
+								alt="icon-arrow"
+							/>
+						</div>
+						<p id="rep3" class="reply">
+							Click “Forgot password” from the login page or “Change password”
+							from your profile page. A reset link will be emailed to you.
+						</p>
+					</li>
 
-				<li>
-					<div class="ask" onclick="toggleExpand('quest4','img4','rep4')">
-						<p id="quest4" class="question">Can I cancel my subscription?</p>
-						<img id="img4"
-							class="icon-arrow"
-							src="./images/icon-arrow-down.svg"
-							role="presentation"
-							alt="icon-arrow"
-						/>
-					</div>
-					<p id="rep4" class="reply">
-						Yes! Send us a message and we’ll process your request no questions
-						asked.
-					</p>
-				</li>
+					<li>
+						<div class="ask" onclick="toggleExpand('quest4','img4','rep4')">
+							<p id="quest4" class="question">Can I cancel my subscription?</p>
+							<img
+								id="img4"
+								class="icon-arrow"
+								src="./images/icon-arrow-down.svg"
+								role="presentation"
+								alt="icon-arrow"
+							/>
+						</div>
+						<p id="rep4" class="reply">
+							Yes! Send us a message and we’ll process your request no questions
+							asked.
+						</p>
+					</li>
 
-				<li>
-					<div class="ask" onclick="toggleExpand('quest5','img5','rep5')">
-						<p id="quest5" class="question">Do you provide additional support?</p>
-						<img id="img5"
-							class="icon-arrow"
-							src="./images/icon-arrow-down.svg"
-							role="presentation"
-							alt="icon-arrow"
-						/>
-					</div>
-					<p id="rep5" class="reply">
-						Chat and email support is available 24/7. Phone lines are open
-						during normal business hours.
-					</p>
-				</li>
-			</ul>
+					<li>
+						<div class="ask" onclick="toggleExpand('quest5','img5','rep5')">
+							<p id="quest5" class="question">
+								Do you provide additional support?
+							</p>
+							<img
+								id="img5"
+								class="icon-arrow"
+								src="./images/icon-arrow-down.svg"
+								role="presentation"
+								alt="icon-arrow"
+							/>
+						</div>
+						<p id="rep5" class="reply">
+							Chat and email support is available 24/7. Phone lines are open
+							during normal business hours.
+						</p>
+					</li>
+				</ul>
+			</section>
 		</main>
 		<div class="attribution">
 			Challenge by
@@ -119,21 +142,20 @@
 			>. Coded by <a href="#">Bruno Riquelme</a>.
 		</div>
 		<script>
-			function toggleExpand(idquest,idimg,idrep){
-				const quest=document.getElementById(idquest);
-				const img=document.getElementById(idimg);
-				const rep=document.getElementById(idrep);
-				
-				if(rep.style.display === "block"){
+			function toggleExpand(idquest, idimg, idrep) {
+				const quest = document.getElementById(idquest);
+				const img = document.getElementById(idimg);
+				const rep = document.getElementById(idrep);
+
+				if (rep.style.display === "block") {
 					quest.style.fontWeight = "400";
-					img.style.transform="none";
+					img.style.transform = "none";
 					rep.style.display = "none";
-				} else{
-					quest.style.fontWeight = "bold";
-					img.style.transform ="rotate(180deg)";
+				} else {
+					quest.style.fontWeight = "800";
+					img.style.transform = "rotate(180deg)";
 					rep.style.display = "block";
 				}
-				
 			}
 		</script>
 	</body>
