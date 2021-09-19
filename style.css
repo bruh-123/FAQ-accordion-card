@@ -43,7 +43,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-image: linear-gradient(var(--SoftViolet), var(--SoftBlue));
-	/* width: 375px; */
 	padding: 150px 0 85px;
 }
 
@@ -66,10 +65,6 @@ main {
 	background-position: top 0px left 50%;
 	margin-bottom: 2rem;
 	padding-bottom: 15px;
-}
-
-.box {
-	display: none;
 }
 
 .image {
@@ -131,7 +126,7 @@ li {
 	color: var(--SoftRed);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1440px) {
 	body {
 		padding-top: 130px;
 		padding-bottom: 105px;
@@ -144,7 +139,6 @@ li {
 		align-items: flex-start;
 		width: 920px;
 		min-height: 400px;
-		overflow: hidden;
 		padding: 0;
 		background-image: url("./images/bg-pattern-desktop.svg");
 		background-repeat: no-repeat;
@@ -152,22 +146,19 @@ li {
 	}
 	.img-stack {
 		align-self: center;
+		min-height: 400px;
 		width: 60%;
-		background-image: none;
+		background-image: url("./images/illustration-woman-online-desktop.svg");
+		background-position: top 10px left -83px;
 		margin: 0;
 		padding: 0;
 	}
-	.box {
-		position: absolute;
-		display: block;
-		left: 100px;
-		top: 330px;
-	}
+
 	.image {
-		content: url("./images/illustration-woman-online-desktop.svg");
+		content: url("./images/illustration-box-desktop.svg");
 		padding: 0;
-		margin-left: -83px;
-		margin-top: -7px;
+		margin-left: -93px;
+		margin-top: 148px;
 	}
 	.faq {
 		width: 54%;
