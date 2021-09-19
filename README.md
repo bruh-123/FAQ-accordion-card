@@ -1,7 +1,6 @@
 # Frontend Mentor - FAQ accordion card solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ### The challenge
 
@@ -19,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/html-css-js-rTJTIFm_2)
+- Live Site URL: [live site URL](https://faq-card-eight.vercel.app/)
 
 ### Built with
 
@@ -32,4 +31,4 @@ Users should be able to:
 
 ## Author
 
-- Twitter - [@Bruh__no](https://twitter.com/Bruh__no)
+- Twitter - [@Bruh\_\_no](https://twitter.com/Bruh__no)
