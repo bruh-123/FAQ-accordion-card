@@ -19,9 +19,9 @@
 		<title>Frontend Mentor | FAQ Accordion Card</title>
 	</head>
 	<body>
-		<h1 class="sr-only">F A Q card</h1>
 		<main class="card">
-			<div class="img-stack">
+			<h1 class="sr-only">F A Q card</h1>
+			<div class="img-stack" aria-hidden="true">
 				<img
 					class="image"
 					role="presentation"
@@ -29,7 +29,7 @@
 					alt=""
 				/>
 			</div>
-			<section class="faq">
+			<div class="faq">
 				<div class="title">FAQ</div>
 				<ul>
 					<li>
@@ -39,9 +39,7 @@
 							</p>
 							<img
 								id="img1"
-								class="icon-arrow"
 								src="./images/icon-arrow-down.svg"
-								role="presentation"
 								alt="icon-arrow"
 							/>
 						</div>
@@ -58,9 +56,7 @@
 							</p>
 							<img
 								id="img2"
-								class="icon-arrow"
 								src="./images/icon-arrow-down.svg"
-								role="presentation"
 								alt="icon-arrow"
 							/>
 						</div>
@@ -75,9 +71,7 @@
 							<p id="quest3" class="question">How do I reset my password?</p>
 							<img
 								id="img3"
-								class="icon-arrow"
 								src="./images/icon-arrow-down.svg"
-								role="presentation"
 								alt="icon-arrow"
 							/>
 						</div>
@@ -92,9 +86,7 @@
 							<p id="quest4" class="question">Can I cancel my subscription?</p>
 							<img
 								id="img4"
-								class="icon-arrow"
 								src="./images/icon-arrow-down.svg"
-								role="presentation"
 								alt="icon-arrow"
 							/>
 						</div>
@@ -111,9 +103,7 @@
 							</p>
 							<img
 								id="img5"
-								class="icon-arrow"
 								src="./images/icon-arrow-down.svg"
-								role="presentation"
 								alt="icon-arrow"
 							/>
 						</div>
@@ -123,14 +113,14 @@
 						</p>
 					</li>
 				</ul>
-			</section>
+			</div>
 		</main>
-		<div class="attribution">
+		<footer class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
 			>. Coded by <a href="#">Bruno Riquelme</a>.
-		</div>
+		</footer>
 		<script>
 			function toggleExpand(idquest, idimg, idrep) {
 				const quest = document.getElementById(idquest);
